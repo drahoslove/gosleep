@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Go sleep</title>
+<style>
+html, body, menu {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	display: none;
+}
+menu {
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+menu>button {
+	flex-grow: 1;
+	font-size: 5rem;
+	padding-right: 1em;
+}
+</style>
+</head>
+<body>
+	<h1>Go sleep</h1>
+	<menu>
+		<button onclick="fetch('/lock')">
+			🔒 Lock
+		</button>
+		<button onclick="fetch('/sleep')">
+			🌙 Sleep
+		</button>
+		<button onclick="fetch('/hibernate')">
+			⚡ Hibernate
+		</button>
+	</menu>
+</body>
+</html>
